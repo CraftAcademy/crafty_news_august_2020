@@ -1,2 +1,5 @@
-<h1>We are starting with Rails!</h1>
-<h1>This is going to be a long week</h1>
+<% @articles.each do |article| %>
+  <h1>
+    <%= article.title %><br/>
+  </h1> 
+<% end %>
