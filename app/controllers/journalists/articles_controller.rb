@@ -1,4 +1,4 @@
-class ArticlesController < ApplicationController
+class Journalists::ArticlesController < ApplicationController
   def index
     @articles = Article.all
   end
@@ -7,5 +7,6 @@ class ArticlesController < ApplicationController
     @article = Article.find(params[:id])
   end
 
-  
+  def create
+  end
 end
